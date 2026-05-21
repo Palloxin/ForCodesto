@@ -6,11 +6,18 @@
 
 
 </div></body>
+  
 <script>
+//↓↓↓↓ Snippet
 chapter = document.querySelector('#LNReader-chapter');
 chapter.innerHTML = chapter.innerHTML
-.replace(/\bgirl’s finally\b/, 'girl has finally')
+.replace(/\bgirl’s finally\b/, 'girl has finally');
+//↑↑↑↑
+
+//↓↓ Verification Code
+chapter.innerHTML = chapter.innerHTML
 .replace(/The girl’s family had done/, '$&✔️')
 .replace(/The girl has finally had done/, '$&✔️')
+//↑↑ 
 </script>
 </html>
