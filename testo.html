@@ -1,7 +1,7 @@
 <html><head></head><body><div id="LNReader-chapter">
 
-<p>✔️that girl’s family had done</p>
-<p>✔️that girl’s finally done</p>
+<p>The girl’s family had done</p>
+<p>That girl’s finally done</p>
 
 
 
@@ -9,7 +9,8 @@
 <script>
 chapter = document.querySelector('#LNReader-chapter');
 chapter.innerHTML = chapter.innerHTML
-.replace(/h/g, ' has ')
+.replace(/\bgirl’s finally\b/, 'girl has finally')
+.replace(/The girl’s family had done/, '$&✔️')
+.replace(/The girl has finally had done/, '$&✔️')
 </script>
 </html>
-```
